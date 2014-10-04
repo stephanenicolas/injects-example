@@ -1,6 +1,7 @@
 package com.github.stephanenicolas.injectsexample;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -26,6 +27,9 @@ public class MainActivity extends ActionBarActivity {
   private TextView textView;
   @InjectView(R.id.button)
   private Button button;
+  @InjectView(R.id.radio)
+  @Nullable
+  private Button button2;
 
   @InjectResource(R.string.app_name)
   private String appName;
@@ -40,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     this.button = (Button) findViewById(R.id.button);
-    Log.d("DEBUG", "Before button");
+    Log.d("DEBUG", "Before button " + button);
     button.setOnClickListener( new View.OnClickListener() {
       @Override public void onClick(View view) {
         Fragment fragmentInner = getSupportFragmentManager().findFragmentById(R.id.containerInner);
