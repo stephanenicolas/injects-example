@@ -16,8 +16,8 @@ buildscript {
     //support
     //classpath ("com.android.support:support-annotations:19.1.0") { optional = true }
 
-    classpath ("com.github.stephanenicolas.morpheus:morpheus-plugin:1.0.8-SNAPSHOT")
-    classpath ("com.github.stephanenicolas.injectview:injectview-plugin:1.0.2-SNAPSHOT")
+    //classpath ("com.github.stephanenicolas.morpheus:morpheus-plugin:1.0.8")
+    classpath ("com.github.stephanenicolas.injectview:injectview-plugin:1.0.2")
     classpath ("com.github.stephanenicolas.injectresource:injectresource-plugin:1.0.2")
     classpath ("com.github.stephanenicolas.injectextra:injectextra-plugin:1.0.5")
     //for tests (TODO)
